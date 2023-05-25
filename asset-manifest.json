@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/bragehain/static/css/main.347fdfc1.css",
+    "main.js": "/bragehain/static/js/main.b40b50c9.js",
+    "static/js/787.c7966af5.chunk.js": "/bragehain/static/js/787.c7966af5.chunk.js",
+    "static/media/pattern.png": "/bragehain/static/media/pattern.5b58d6e6dfcb951cb6d4.png",
+    "static/media/background.jpg": "/bragehain/static/media/background.66b7c0fa26125751b65f.jpg",
+    "static/media/MoonDream.otf": "/bragehain/static/media/MoonDream.9df2eb86c57960b82275.otf",
+    "static/media/Blue-Ocean.ttf": "/bragehain/static/media/Blue-Ocean.054b56c6ed937002a73f.ttf",
+    "index.html": "/bragehain/index.html",
+    "main.347fdfc1.css.map": "/bragehain/static/css/main.347fdfc1.css.map",
+    "main.b40b50c9.js.map": "/bragehain/static/js/main.b40b50c9.js.map",
+    "787.c7966af5.chunk.js.map": "/bragehain/static/js/787.c7966af5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.347fdfc1.css",
+    "static/js/main.b40b50c9.js"
+  ]
+}
