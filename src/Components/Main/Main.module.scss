@@ -1,0 +1,44 @@
+.Main {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+  &__Inner {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fdfcf0;
+    background-image: url("../../Assets/Images/background.jpg");
+    background-size: cover;
+    position: absolute;
+    inset: 0;
+  }
+
+  &__PreTitle {
+    font-family: "Moon Dream";
+    font-size: calc(12.54545px + 0.45455vw);
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    line-height: 1;
+    color: #2a2b31;
+  }
+
+  &__Title {
+    margin: 0;
+    font-family: "Blue Ocean";
+    font-size: calc(8.18182px + 6.81818vw);
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    line-height: 1.4;
+    color: #2a2b31;
+  }
+
+  &__Text {
+    font-size: calc(15.09091px + 0.90909vw);
+    font-family: "Helvetica-Black";
+    text-align: center;
+    color: #2a2b31;
+  }
+}
