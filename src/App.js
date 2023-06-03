@@ -1,11 +1,12 @@
 import Main from "./Components/Main/Main";
-import Date from "./Components/Date/Date";
+import Info from "./Components/Info/Info";
+import InfoData from "./Data/InfoData";
 
 function App() {
   return (
     <div className="App">
       <Main />
-      <Date />
+      <Info {...InfoData} />
     </div>
   );
 }

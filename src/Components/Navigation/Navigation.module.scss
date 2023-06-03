@@ -1,0 +1,34 @@
+@import "../../Styles/variables.scss";
+
+.Navigation {
+  padding: 3rem 2rem;
+  position: fixed;
+  right: 0;
+  z-index: 9;
+  background-color: $purple;
+  border-bottom-left-radius: 4rem;
+
+  &__Menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &__Button {
+    margin: 0 2.4rem;
+    padding: 0.5rem 0rem;
+    font-family: "Apercu Mono";
+    font-size: 1.6rem;
+    color: $off-black;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    border-bottom: 0.2rem solid transparent;
+    display: inline-block;
+
+    &:hover {
+      border-bottom: 0.2rem solid $off-black;
+    }
+  }
+}

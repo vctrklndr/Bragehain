@@ -1,3 +1,5 @@
+@import "../../Styles/variables.scss";
+
 .Main {
   height: 100vh;
   width: 100%;
@@ -9,36 +11,42 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #fdfcf0;
-    background-image: url("../../Assets/Images/background.jpg");
+    background-color: $purple;
+    background-image: url('../../Assets/Images/purple-pattern.png');
     background-size: cover;
     position: absolute;
     inset: 0;
   }
 
   &__PreTitle {
+    margin-bottom: 3.2rem;
     font-family: "Moon Dream";
     font-size: calc(12.54545px + 0.45455vw);
     text-transform: uppercase;
     letter-spacing: 0.25rem;
     line-height: 1;
-    color: #2a2b31;
+    color: $off-black;
   }
 
   &__Title {
     margin: 0;
-    font-family: "Blue Ocean";
+    font-family: "Narnia";
     font-size: calc(8.18182px + 6.81818vw);
+    // font-size: clamp(3rem, -8.6667rem + 38.8889vw, 10rem);
+    font-size: 14vw;
     text-transform: uppercase;
     letter-spacing: 0.25rem;
-    line-height: 1.4;
-    color: #2a2b31;
+    color: $beige;
   }
 
   &__Text {
+    margin-top: -3rem;
+    font-family: "Moon Dream";
     font-size: calc(15.09091px + 0.90909vw);
-    font-family: "Helvetica-Black";
+    font-size: 2.8vw;
+    line-height: 1.4;
+    text-transform: uppercase;
     text-align: center;
-    color: #2a2b31;
+    color: $off-black;
   }
 }
