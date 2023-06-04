@@ -12,9 +12,6 @@
     z-index: 9;
     transition: 400ms ease-in-out background-color;
 
-    &:focus,
-    &:focus-within,
-    &:focus-visible,
     &:hover {
       background-color: $dark-pink;
     }
