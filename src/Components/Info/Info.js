@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from "classnames";
 import Faq from "../Faq/Faq";
 import FaqItems from "../../Data/FaqItems";
 import styles from "./Info.module.scss";
@@ -13,7 +14,11 @@ const Info = ({ items = [], rvsp = "" }) => {
               <h2 id={item.id} className={styles["Info__Title"]}>
                 <span>{item.title}</span>
               </h2>
-              <div className={styles["Info__Grid"]}>
+              <div
+                className={classNames(styles["Info__Grid"], {
+                  [styles["Info__Grid--Narrow"]]: index === 0
+                })}
+              >
                 <div
                   className={styles["Info__Text"]}
                   dangerouslySetInnerHTML={{ __html: item.text }}

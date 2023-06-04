@@ -15,14 +15,18 @@
     background-size: cover;
 
     @include media(m) {
-      background-size: contain;
       padding: 10rem 2rem;
+      background-size: contain;
     }
   }
 
   &__Grid {
+    max-width: 800px;
     text-align: center;
-    max-width: 640px;
+
+    &--Narrow {
+      max-width: 640px;
+    }
   }
 
   &__Title {
@@ -30,12 +34,17 @@
   }
 
   &__Text {
+    @extend %richtext;
+
     font-family: $body;
-    line-height: 1.6;
     font-size: 1.8rem;
+    line-height: 1.6;
     color: $off-black;
 
-    @extend %richtext;
+    @include media(m) {
+      font-size: 2rem;
+      line-height: 1.4;
+    }
   }
 
   &__LinkList {
@@ -46,8 +55,15 @@
   }
 
   &__Link {
-    color: $off-black;
+    font-size: 1.8rem;
+    line-height: 1.6;
     text-decoration: none;
+    color: $off-black;
+
+    @include media(m) {
+      font-size: 2rem;
+      line-height: 1.4;
+    }
 
     span {
       position: relative;
