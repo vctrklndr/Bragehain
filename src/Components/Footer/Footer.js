@@ -3,7 +3,8 @@ import styles from "./Footer.module.scss";
 const Footer = ({}) => {
   return (
     <div className={styles["Footer"]}>
-      <span>#bragehain #klubb40</span>
+      <a href="https://www.instagram.com/explore/tags/bragehain/">#bragehain</a>{" "}
+      <a href="https://www.instagram.com/explore/tags/klubb40/">#klubb40</a>
     </div>
   );
 };

@@ -14,4 +14,9 @@
   @include media(m) {
     padding: 4rem 2rem;
   }
+
+  a {
+    color: $pink;
+    text-decoration: none;
+  }
 }
