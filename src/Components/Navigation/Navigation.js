@@ -23,6 +23,9 @@ const Navigation = ({ items = [] }) => {
           <span className={styles["Navigation__Line"]}></span>
           <span className={styles["Navigation__Line"]}></span>
           <span className={styles["Navigation__Line"]}></span>
+          <span className="sr-only">
+            {isExpanded ? "Stäng meny" : "Öppna meny"}
+          </span>
         </button>
       </div>
       <nav className={navigationClasses}>
