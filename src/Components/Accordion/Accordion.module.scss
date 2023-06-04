@@ -58,6 +58,8 @@
   }
 
   &__RichText {
+    @extend %richtext;
+    
     padding-top: 0.8rem;
     font-family: $body;
     font-size: 1.6rem;
@@ -81,16 +83,6 @@
       &:hover {
         color: $dark-pink;
         border-color: $dark-pink;
-      }
-    }
-
-    p {
-      &:not(:first-of-type) {
-        margin-top: 1.8rem;
-      }
-
-      &:not(:last-of-type) {
-        margin-bottom: 1.8rem;
       }
     }
 

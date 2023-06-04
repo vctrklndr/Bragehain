@@ -35,19 +35,7 @@
     font-size: 1.8rem;
     color: $off-black;
 
-    ul {
-      margin-top: 1.8rem;
-    }
-
-    p {
-      &:not(:first-of-type) {
-        margin-top: 1.8rem;
-      }
-
-      &:not(:last-of-type) {
-        margin-bottom: 1.8rem;
-      }
-    }
+    @extend %richtext;
   }
 
   &__LinkList {

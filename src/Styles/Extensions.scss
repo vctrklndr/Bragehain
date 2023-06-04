@@ -12,12 +12,27 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  
+
   &:not(:first-of-type) {
     margin-top: 6rem;
   }
   @include media(m) {
     font-size: 6rem;
+  }
+}
 
+%richtext {
+  ul {
+    margin-top: 1.8rem;
+  }
+
+  p {
+    &:not(:first-of-type) {
+      margin-top: 1.8rem;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 1.8rem;
+    }
   }
 }
