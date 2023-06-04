@@ -4,6 +4,16 @@
 	http://jedwatson.github.io/classnames
 */
 
+/*!
+* focus-trap 7.4.3
+* @license MIT, https://github.com/focus-trap/focus-trap/blob/master/LICENSE
+*/
+
+/*!
+* tabbable 6.1.2
+* @license MIT, https://github.com/focus-trap/tabbable/blob/master/LICENSE
+*/
+
 /**
  * @license React
  * react-dom.production.min.js
