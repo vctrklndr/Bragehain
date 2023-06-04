@@ -15,6 +15,8 @@
     background-color: $purple;
     background-image: url("../../Assets/Images/purple-pattern.webp");
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     position: absolute;
     inset: 0;
   }
@@ -57,7 +59,7 @@
     @include media(s) {
       margin-top: -1.4rem;
     }
-    
+
     @include media(m) {
       margin-top: -2.4vw;
       font-size: 2.8vw;
