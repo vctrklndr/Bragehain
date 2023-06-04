@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+import FocusTrap from "focus-trap-react";
 import classNames from "classnames";
 import styles from "./Navigation.module.scss";
 
 const Navigation = ({ items = [] }) => {
   const [isExpanded, setExpanded] = useState(false);
 
-  const classes = classNames(styles["Navigation"], {
-    [styles["Navigation--IsExpanded"]]: isExpanded
+  const classes = classNames(styles["Navigation__Button"], {
+    [styles["Navigation__Button--IsExpanded"]]: isExpanded
   });
 
   const navigationClasses = classNames(styles["Navigation__Navigation"], {
@@ -14,12 +15,9 @@ const Navigation = ({ items = [] }) => {
   });
 
   return (
-    <>
-      <div className={classes}>
-        <button
-          className={styles["Navigation__Button"]}
-          onClick={() => setExpanded(!isExpanded)}
-        >
+    <FocusTrap active={isExpanded}>
+      <div className={styles["Navigation"]}>
+        <button className={classes} onClick={() => setExpanded(!isExpanded)}>
           <span className={styles["Navigation__Line"]}></span>
           <span className={styles["Navigation__Line"]}></span>
           <span className={styles["Navigation__Line"]}></span>
@@ -27,15 +25,16 @@ const Navigation = ({ items = [] }) => {
             {isExpanded ? "Stäng meny" : "Öppna meny"}
           </span>
         </button>
+
+        <nav className={navigationClasses}>
+          <ul className={styles["Navigation__Menu"]}>
+            {items.map((item, index) => (
+              <ListItem key={index} setExpanded={setExpanded} {...item} />
+            ))}
+          </ul>
+        </nav>
       </div>
-      <nav className={navigationClasses}>
-        <ul className={styles["Navigation__Menu"]}>
-          {items.map((item, index) => (
-            <ListItem key={index} setExpanded={setExpanded} {...item} />
-          ))}
-        </ul>
-      </nav>
-    </>
+    </FocusTrap>
   );
 };
 

@@ -1,23 +1,23 @@
 @import "../../Styles/Includes.scss";
 
 .Navigation {
-  position: fixed;
-  right: 0;
-  z-index: 9;
-  background-color: $purple;
-  border-bottom-left-radius: 4rem;
-  transition: 400ms ease-in-out background-color;
-
-  &:hover {
-    background-color: $dark-pink;
-  }
-
   &__Button {
     margin: 0;
-    padding: 0;
     padding: 1.6rem 2rem 2rem 2.4rem;
     border: 0;
-    background-color: transparent;
+    background-color: $purple;
+    border-bottom-left-radius: 4rem;
+    position: fixed;
+    right: 0;
+    z-index: 9;
+    transition: 400ms ease-in-out background-color;
+
+    &:focus,
+    &:focus-within,
+    &:focus-visible,
+    &:hover {
+      background-color: $dark-pink;
+    }
   }
 
   &__Line {
@@ -36,7 +36,7 @@
       margin-bottom: 0;
     }
 
-    .Navigation--IsExpanded & {
+    .Navigation__Button--IsExpanded & {
       &:nth-child(1) {
         transform: translateY(1rem);
       }
