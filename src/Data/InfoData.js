@@ -3,7 +3,7 @@ const InfoData = {
     {
       id: "information",
       title: "Information",
-      text: "<p>Bragehain är engångsfestivalen som för första och sista gången går av stapeln den 26 augusti 2023.<br /></p><ul><li>Tid och plats: 15:00 parkeringen vid Slottet i Vadstena</li><li>Gemensam transportering till Shakesperefabriken runt 15:30</li></ul>",
+      text: "<p>Bragehain är engångsfestivalen som för första och sista gången går av stapeln den 26 augusti 2023.<br /></p><ul><li>Tid och plats: 15:00 på parkeringen vid Slottet i Vadstena.</li><li>Gemensam transportering till Shakesperefabriken runt 15:30.</li></ul>",
       links: []
     },
     {

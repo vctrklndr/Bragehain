@@ -1,7 +1,6 @@
 @import "../../Styles/Includes.scss";
 
 .Navigation {
-  padding: 1.8rem 2rem 1.8rem 2.2rem;
   position: fixed;
   right: 0;
   z-index: 9;
@@ -13,13 +12,10 @@
     background-color: $dark-pink;
   }
 
-  @include media(m) {
-    padding: 2rem;
-  }
-
   &__Button {
     margin: 0;
     padding: 0;
+    padding: 1.6rem 2rem 2rem 2.4rem;
     border: 0;
     background-color: transparent;
   }
