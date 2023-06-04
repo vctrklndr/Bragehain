@@ -1,4 +1,4 @@
-@import "../../Styles/variables.scss";
+@import "../../Styles/Includes.scss";
 
 .Main {
   height: 100vh;
@@ -11,16 +11,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     background-color: $purple;
-    background-image: url('../../Assets/Images/purple-pattern.png');
+    background-image: url("../../Assets/Images/purple-pattern.png");
     background-size: cover;
     position: absolute;
     inset: 0;
   }
 
   &__PreTitle {
-    margin-bottom: 3.2rem;
-    font-family: "Moon Dream";
+    margin-bottom: 1.4rem;
+    font-family: $moon-dream;
     font-size: calc(12.54545px + 0.45455vw);
     text-transform: uppercase;
     letter-spacing: 0.25rem;
@@ -30,23 +31,36 @@
 
   &__Title {
     margin: 0;
-    font-family: "Narnia";
-    font-size: calc(8.18182px + 6.81818vw);
-    // font-size: clamp(3rem, -8.6667rem + 38.8889vw, 10rem);
-    font-size: 14vw;
+    font-family: $narnia;
+    font-size: 8rem;
     text-transform: uppercase;
     letter-spacing: 0.25rem;
     color: $beige;
+
+    @include media(s) {
+      font-size: 12rem;
+    }
+
+    @include media(m) {
+      font-size: 14vw;
+    }
   }
 
   &__Text {
-    margin-top: -3rem;
-    font-family: "Moon Dream";
+    margin-top: -1rem;
+    font-family: $moon-dream;
     font-size: calc(15.09091px + 0.90909vw);
-    font-size: 2.8vw;
     line-height: 1.4;
     text-transform: uppercase;
-    text-align: center;
     color: $off-black;
+
+    @include media(s) {
+      margin-top: -1.4rem;
+    }
+    
+    @include media(m) {
+      margin-top: -2.4vw;
+      font-size: 2.8vw;
+    }
   }
 }

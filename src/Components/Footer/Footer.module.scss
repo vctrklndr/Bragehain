@@ -1,0 +1,17 @@
+@import "../../Styles/Includes.scss";
+
+.Footer {
+  padding: 2rem 2rem;
+  font-family: $body;
+  font-size: 1.4rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  color: $pink;
+  background-color: $dark-purple;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+
+  @include media(m) {
+    padding: 4rem 2rem;
+  }
+}

@@ -1,4 +1,6 @@
 import React from "react";
+import Faq from "../Faq/Faq";
+import FaqItems from "../../Data/FaqItems";
 import styles from "./Info.module.scss";
 
 const Info = ({ items = [], rvsp = "" }) => {
@@ -19,11 +21,7 @@ const Info = ({ items = [], rvsp = "" }) => {
                 {item.links.length > 0 && (
                   <ul className={styles["Info__LinkList"]}>
                     {item.links.map((link, index) => (
-                      <li key={index}>
-                        <a className={styles["Info__Link"]} href={link.href}>
-                          <span>{link.title}</span>
-                        </a>
-                      </li>
+                      <LinkItem key={index} {...link} />
                     ))}
                   </ul>
                 )}
@@ -31,9 +29,23 @@ const Info = ({ items = [], rvsp = "" }) => {
             </React.Fragment>
           );
         })}
-        <h2 className={styles["Info__RVSP"]}>{rvsp}</h2>
+        <h2
+          className={styles["Info__RVSP"]}
+          dangerouslySetInnerHTML={{ __html: rvsp }}
+        />
       </div>
+      <Faq {...FaqItems} />
     </div>
+  );
+};
+
+const LinkItem = ({ href = "", title = "" }) => {
+  return (
+    <li className={styles["Info__Item"]}>
+      <a className={styles["Info__Link"]} href={href}>
+        <span>{title}</span>
+      </a>
+    </li>
   );
 };
 

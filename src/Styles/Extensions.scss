@@ -1,0 +1,24 @@
+@import "Variables.scss";
+
+%title {
+  margin-bottom: 0.8rem;
+  width: 100%;
+  font-size: 4rem;
+  font-family: $narnia;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  line-height: 1.4;
+  color: $off-black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+  &:not(:first-of-type) {
+    margin-top: 6rem;
+  }
+  @include media(m) {
+    font-size: 6rem;
+
+  }
+}

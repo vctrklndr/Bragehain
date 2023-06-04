@@ -1,13 +1,23 @@
-@import "../../Styles/variables.scss";
+@import "../../Styles/Includes.scss";
 
 .Info {
   &__Inner {
-    padding: 10rem 2rem;
+    padding: 4rem 2rem;
     display: flex;
-    background-color: $beige;
+    background-color: $pink;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-radius: 4rem;
+    background-image: url("../../Assets/Images/blob.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    @include media(m) {
+      background-size: contain;
+      padding: 10rem 2rem;
+    }
   }
 
   &__Grid {
@@ -16,27 +26,11 @@
   }
 
   &__Title {
-    margin-bottom: 0.8rem;
-    width: 100%;
-    font-size: calc(15.09091px + 0.90909vw);
-    font-size: 2.8vw;
-    font-family: "Narnia";
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    line-height: 1.4;
-    color: $off-black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
-    &:not(:first-of-type) {
-      margin-top: 6rem;
-    }
+    @extend %title;
   }
 
   &__Text {
-    font-family: "Aften Screen";
+    font-family: $body;
     line-height: 1.6;
     font-size: 1.8rem;
     color: $off-black;
@@ -57,7 +51,7 @@
   }
 
   &__LinkList {
-    font-family: "Aften Screen";
+    font-family: $body;
     line-height: 1.6;
     font-size: 1.8rem;
     color: $off-black;
@@ -107,8 +101,15 @@
 
   &__RVSP {
     margin-top: 6rem;
-    font-family: "Aften Screen Bold";
-    font-size: 4rem;
+    font-family: $bold;
+    font-size: 2.4rem;
+    text-align: center;
     color: $off-black;
+    text-decoration: none;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
   }
 }

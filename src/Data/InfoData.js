@@ -7,7 +7,7 @@ const InfoData = {
       links: []
     },
     {
-      id: "food-and-beverages",
+      id: "food-and-drinks",
       title: "Mat & Dryck",
       text: "<p> Fri bar. Foodtruck.<br />Meddela allergier / specialkost please</p>",
       links: []
@@ -32,7 +32,7 @@ const InfoData = {
       ]
     }
   ],
-  rvsp: "RSVP: 20/7 till 0733-968622"
+  rvsp: "OSA: 20/7 till <a href='tel:0733968622'>073–396 86 22</a> "
 };
 
 export default InfoData;

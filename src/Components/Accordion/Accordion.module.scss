@@ -1,0 +1,98 @@
+@import "../../Styles/Includes.scss";
+
+.Accordion {
+  margin: 0.4rem -1rem;
+  padding: 0.8rem 1.6rem;
+  background-color: transparent;
+  transition: background-color 400ms ease-in-out, margin-top 400ms ease-in-out,
+    margin-bottom 400ms ease-in-out;
+  border-radius: 0.8rem;
+
+  @include media(m) {
+    margin: 0.4rem -2rem;
+    padding: 1.2rem 2rem;
+  }
+
+  &:hover {
+    background-color: $beige;
+  }
+
+  &--Expanded {
+    background-color: $beige;
+  }
+
+  &__Content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 400ms ease-in-out;
+  }
+
+  &__Button {
+    padding: 0;
+    width: 100%;
+    font-family: $bold;
+    font-size: 2rem;
+    text-align: left;
+    color: $off-black;
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+    &:after {
+      content: "+";
+      background-repeat: no-repeat;
+      transition: transform 400ms ease-in-out;
+      flex-shrink: 0;
+
+      .Accordion--Expanded & {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &__RichText {
+    padding-top: 0.8rem;
+    font-family: $body;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: $off-black;
+    visibility: hidden;
+    transition: 400ms ease-in-out visibility;
+
+    @include media(m) {
+      padding-top: 2rem;
+      padding-bottom: 0.8rem;
+      max-width: 760px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      border-bottom: 1px solid $off-black;
+      transition: 400ms ease-in-out all;
+
+      &:hover {
+        color: $dark-pink;
+        border-color: $dark-pink;
+      }
+    }
+
+    p {
+      &:not(:first-of-type) {
+        margin-top: 1.8rem;
+      }
+
+      &:not(:last-of-type) {
+        margin-bottom: 1.8rem;
+      }
+    }
+
+    .Accordion--Expanded & {
+      visibility: visible;
+    }
+  }
+}

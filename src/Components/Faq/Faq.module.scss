@@ -1,0 +1,19 @@
+@import "../../Styles/Includes.scss";
+
+.Faq {
+  padding: 4rem 2rem;
+  background-color: $purple;
+
+  @include media(m) {
+    padding: 8rem 2rem;
+  }
+
+  &__Title {
+    @extend %title;
+  }
+
+  &__Container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
