@@ -14,11 +14,13 @@
   }
 
   &:hover {
-    background-color: $beige;
+    @include media(m) {
+      background-color: $dark-purple;
+    }
   }
 
   &--Expanded {
-    background-color: $beige;
+    background-color: $dark-purple;
   }
 
   &__Content {
@@ -38,7 +40,8 @@
     background-color: transparent;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    gap: 1rem;
     overflow: hidden;
     position: relative;
 

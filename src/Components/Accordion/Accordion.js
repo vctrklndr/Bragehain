@@ -4,9 +4,9 @@ import { debounce } from "debounce";
 
 import styles from "./Accordion.module.scss";
 
-const Accordion = ({ question, answer, open, id }) => {
+const Accordion = ({ question, answer, id }) => {
   const [contentHeight, setContentHeight] = useState(null);
-  const [isExpanded, setIsExpanded] = useState(open);
+  const [isExpanded, setIsExpanded] = useState(null);
   const accordionAnswer = useRef(null);
 
   const handleResize = debounce(
@@ -29,32 +29,11 @@ const Accordion = ({ question, answer, open, id }) => {
     [styles["Accordion--Expanded"]]: isExpanded
   });
 
-  const handleClick = (expanded, question) => {
-    setIsExpanded(expanded);
-
-    if (typeof window.dataLayer === "undefined") return;
-
-    window.dataLayer.push({
-      faqTitle: question,
-      event: !isExpanded
-        ? "customerServiceExpandFaqQuestion"
-        : "customerServiceMinimizeFaqQuestion"
-    });
-
-    window._mtm = window._mtm || [];
-    window._mtm.push({
-      faqTitle: question,
-      event: !isExpanded
-        ? "customerServiceExpandFaqQuestion"
-        : "customerServiceMinimizeFaqQuestion"
-    });
-  };
-
   return (
     <div className={classes}>
       <button
         className={styles.Accordion__Button}
-        onClick={() => handleClick(!isExpanded, question)}
+        onClick={() => setIsExpanded(!isExpanded)}
         aria-expanded={isExpanded}
         aria-controls={id}
         id={headerId}
