@@ -2,7 +2,7 @@ const NavigationItems = {
   items: [
     {
       title: "Om Bragehain",
-      href: "#information"
+      href: "#om-bragehain"
     },
     {
       title: "Mat & Dryck",

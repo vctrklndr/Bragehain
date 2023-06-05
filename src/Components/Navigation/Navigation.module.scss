@@ -80,6 +80,8 @@
     letter-spacing: 0.1rem;
     color: $purple;
     display: inline-block;
+    border: 0;
+    background-color: transparent;
     transition: 400ms ease-in-out all;
 
     @include media(m) {

@@ -44,15 +44,22 @@ const Navigation = ({ items = [] }) => {
 };
 
 const ListItem = ({ setExpanded, title = "", href = "" }) => {
+  const handleClick = (e) => {
+    e.preventDefault();
+
+    setExpanded(false);
+    setTimeout(() => {
+      window.location.hash = href;
+    }, 100);
+  };
   return (
     <li className={styles["Navigation__Item"]}>
-      <a
+      <button
         className={styles["Navigation__Link"]}
-        onClick={() => setExpanded(false)}
-        href={href}
+        onClick={(e) => handleClick(e)}
       >
         {title}
-      </a>
+      </button>
     </li>
   );
 };

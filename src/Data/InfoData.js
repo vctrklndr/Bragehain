@@ -1,8 +1,8 @@
 const InfoData = {
   items: [
     {
-      id: "information",
-      title: "Information",
+      id: "om-bragehain",
+      title: "Om Bragehain",
       text: "<p>Bragehain är engångsklubben som för första och sista gången går av stapeln den 26 augusti 2023.<br /></p><ul><li>Tid och plats: 15:00 på parkeringen vid Slottet i Vadstena.</li><li>Gemensam transportering till Shakesperefabriken runt 15:30.</li></ul>",
       links: []
     },
