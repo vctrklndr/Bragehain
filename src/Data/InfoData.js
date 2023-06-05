@@ -3,13 +3,13 @@ const InfoData = {
     {
       id: "information",
       title: "Information",
-      text: "<p>Bragehain är engångsfestivalen som för första och sista gången går av stapeln den 26 augusti 2023.<br /></p><ul><li>Tid och plats: 15:00 på parkeringen vid Slottet i Vadstena.</li><li>Gemensam transportering till Shakesperefabriken runt 15:30.</li></ul>",
+      text: "<p>Bragehain är engångsklubben som för första och sista gången går av stapeln den 26 augusti 2023.<br /></p><ul><li>Tid och plats: 15:00 på parkeringen vid Slottet i Vadstena.</li><li>Gemensam transportering till Shakesperefabriken runt 15:30.</li></ul>",
       links: []
     },
     {
       id: "food-and-drinks",
       title: "Mat & Dryck",
-      text: "<p> Fri bar. Foodtruck.<br />Meddela allergier / specialkost please</p>",
+      text: "<p> Fri bar. Foodtruck.<br />Meddela allergier / specialkost tillsammans med OSA.</p>",
       links: []
     },
     {
@@ -32,7 +32,7 @@ const InfoData = {
       ]
     }
   ],
-  rvsp: "OSA: 20/7 till <a href='tel:0733968622'>073–396 86 22</a> "
+  rvsp: "<p>OSA*: 20/7 till <a href='tel:0733968622'>073–396 86 22</a></p><p>*plus eventuella allergier / specialkost</p>"
 };
 
 export default InfoData;
