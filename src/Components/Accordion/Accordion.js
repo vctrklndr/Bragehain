@@ -4,7 +4,7 @@ import { debounce } from "debounce";
 
 import styles from "./Accordion.module.scss";
 
-const Accordion = ({ question = "", answer = "", id = "" }) => {
+const Accordion = ({ id = "", question = "", answer = "", links = [] }) => {
   const [contentHeight, setContentHeight] = useState(null);
   const [isExpanded, setIsExpanded] = useState(null);
   const accordionAnswer = useRef(null);
@@ -32,7 +32,7 @@ const Accordion = ({ question = "", answer = "", id = "" }) => {
   return (
     <div className={classes}>
       <button
-        className={styles.Accordion__Button}
+        className={styles["Accordion__Button"]}
         onClick={() => setIsExpanded(!isExpanded)}
         aria-expanded={isExpanded}
         aria-controls={id}
@@ -41,21 +41,66 @@ const Accordion = ({ question = "", answer = "", id = "" }) => {
         {question}
       </button>
       <div
-        className={styles.Accordion__Content}
+        className={styles["Accordion__Container"]}
         style={{
           maxHeight: isExpanded ? contentHeight : 0 + "px"
         }}
       >
-        <div
-          ref={accordionAnswer}
-          className={styles.Accordion__RichText}
-          aria-labelledby={headerId}
-          aria-hidden={!isExpanded}
-          id={id}
-          dangerouslySetInnerHTML={{ __html: answer }}
+        <AccordionContent
+          {...{
+            accordionAnswer,
+            id,
+            headerId,
+            isExpanded,
+            answer,
+            links
+          }}
         />
       </div>
     </div>
+  );
+};
+
+const AccordionContent = ({
+  accordionAnswer,
+  id,
+  headerId,
+  isExpanded,
+  answer,
+  links
+}) => {
+  const hasLinks = links.length > 0;
+
+  return (
+    <div
+      ref={accordionAnswer}
+      aria-labelledby={headerId}
+      aria-hidden={!isExpanded}
+      id={id}
+      className={styles["Accordion__Content"]}
+    >
+      <div
+        className={styles["Accordion__RichText"]}
+        dangerouslySetInnerHTML={{ __html: answer }}
+      />
+      {hasLinks && (
+        <ul className={styles["Accordion__List"]}>
+          {links.map((link, index) => (
+            <LinkItem key={index} {...link} />
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+};
+
+const LinkItem = ({ title = "", href = "" }) => {
+  return (
+    <li className={styles["Accordion__Item"]}>
+      <a className={styles["Accordion__Link"]} href={href}>
+        {title}
+      </a>
+    </li>
   );
 };
 

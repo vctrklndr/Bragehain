@@ -2,6 +2,7 @@
 
 %title {
   width: 100%;
+  padding-top: 4rem;
   font-size: 4rem;
   font-family: $narnia;
   text-transform: uppercase;
@@ -13,17 +14,22 @@
   align-items: center;
   position: relative;
 
-  &:not(:first-of-type) {
-    margin-top: 6rem;
-  }
   @include media(m) {
     font-size: 6rem;
   }
 }
 
 %richtext {
-  ul {
-    margin-top: 1.8rem;
+  a {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid $off-black;
+    transition: 400ms ease-in-out all;
+
+    &:hover {
+      color: $pink;
+      border-color: $pink;
+    }
   }
 
   p {
@@ -34,5 +40,9 @@
     &:not(:last-of-type) {
       margin-bottom: 1.8rem;
     }
+  }
+
+  ul {
+    margin-top: 1.8rem;
   }
 }
