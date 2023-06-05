@@ -33,7 +33,7 @@
       margin-bottom: 0;
     }
 
-    .Navigation__Button--IsExpanded & {
+    .Navigation--IsExpanded & {
       &:nth-child(1) {
         transform: translateY(1rem);
       }
@@ -55,7 +55,7 @@
     visibility: hidden;
     transition: right 300ms ease-in-out, visibility 300ms ease-in-out;
 
-    &--IsExpanded {
+    .Navigation--IsExpanded & {
       top: 0;
       right: 0;
       visibility: visible;
@@ -92,6 +92,7 @@
 
     &:hover {
       color: $dark-pink;
+      cursor: pointer;
     }
   }
 }

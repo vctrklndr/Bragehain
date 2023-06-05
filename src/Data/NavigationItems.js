@@ -6,11 +6,11 @@ const NavigationItems = {
     },
     {
       title: "Mat & Dryck",
-      href: "#food-and-drinks"
+      href: "#mat-och-dryck"
     },
     {
       title: "Boende",
-      href: "#accommodation"
+      href: "#boende"
     },
     {
       title: "FAQ",

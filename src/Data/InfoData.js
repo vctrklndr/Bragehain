@@ -7,13 +7,13 @@ const InfoData = {
       links: []
     },
     {
-      id: "food-and-drinks",
+      id: "mat-och-dryck",
       title: "Mat & Dryck",
       text: "<p> Fri bar. Foodtruck.<br />Meddela allergier / specialkost tillsammans med OSA.</p>",
       links: []
     },
     {
-      id: "accommodation",
+      id: "boende",
       title: "Boende",
       text: "<p>Egen övernattning med bil / camper / husvagn vid Shakesperefabriken</p>",
       links: [
