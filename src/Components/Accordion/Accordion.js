@@ -4,7 +4,7 @@ import { debounce } from "debounce";
 
 import styles from "./Accordion.module.scss";
 
-const Accordion = ({ question, answer, id }) => {
+const Accordion = ({ question = "", answer = "", id = "" }) => {
   const [contentHeight, setContentHeight] = useState(null);
   const [isExpanded, setIsExpanded] = useState(null);
   const accordionAnswer = useRef(null);

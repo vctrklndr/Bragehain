@@ -1,7 +1,7 @@
 import Accordion from "../Accordion/Accordion";
 import styles from "./Faq.module.scss";
 
-const Faq = ({ items }) => {
+const Faq = ({ items = [] }) => {
   return (
     <div id="faq" className={styles["Faq"]}>
       <div className={styles["Faq__Container"]}>

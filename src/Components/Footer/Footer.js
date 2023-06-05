@@ -1,6 +1,6 @@
 import styles from "./Footer.module.scss";
 
-const Footer = ({ hashtags }) => {
+const Footer = ({ hashtags = [] }) => {
   return (
     <footer className={styles["Footer"]}>
       {hashtags.map((hashtag, index) => (
