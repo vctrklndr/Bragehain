@@ -19,7 +19,7 @@ const Navigation = ({ items = [] }) => {
 
   return (
     <FocusTrap active={isExpanded}>
-      <div className={classes}>
+      <header className={classes}>
         <button
           className={styles["Navigation__Button"]}
           onClick={() => setExpanded(!isExpanded)}
@@ -41,7 +41,7 @@ const Navigation = ({ items = [] }) => {
             ))}
           </ul>
         </nav>
-      </div>
+      </header>
     </FocusTrap>
   );
 };

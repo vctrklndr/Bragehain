@@ -1,7 +1,5 @@
 import React from "react";
 import classNames from "classnames";
-import Faq from "../Faq/Faq";
-import FaqItems from "../../Data/FaqItems";
 import styles from "./Info.module.scss";
 
 const Info = ({ items = [], rvsp = "" }) => {
@@ -39,7 +37,6 @@ const Info = ({ items = [], rvsp = "" }) => {
           dangerouslySetInnerHTML={{ __html: rvsp }}
         />
       </div>
-      <Faq {...FaqItems} />
     </div>
   );
 };

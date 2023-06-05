@@ -1,10 +1,13 @@
 import styles from "./Footer.module.scss";
 
-const Footer = () => {
+const Footer = ({ hashtags }) => {
   return (
     <div className={styles["Footer"]}>
-      <a href="https://www.instagram.com/explore/tags/bragehain/">#bragehain</a>{" "}
-      <a href="https://www.instagram.com/explore/tags/klubb40/">#klubb40</a>
+      {hashtags.map((hashtag, index) => (
+        <a key={index} href={hashtag.link}>
+          {hashtag.name}
+        </a>
+      ))}
     </div>
   );
 };
