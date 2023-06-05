@@ -1,6 +1,6 @@
 import styles from "./Footer.module.scss";
 
-const Footer = ({}) => {
+const Footer = () => {
   return (
     <div className={styles["Footer"]}>
       <a href="https://www.instagram.com/explore/tags/bragehain/">#bragehain</a>{" "}
