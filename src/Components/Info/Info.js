@@ -10,7 +10,7 @@ const Info = ({ items = [], rvsp = "" }) => {
           return (
             <React.Fragment key={index}>
               <h2 id={item.id} className={styles["Info__Title"]}>
-                <span>{item.title}</span>
+                {item.title}
               </h2>
               <div
                 className={classNames(styles["Info__Grid"], {

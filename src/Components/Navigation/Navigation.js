@@ -46,7 +46,7 @@ const Navigation = ({ items = [] }) => {
   );
 };
 
-const ListItem = ({ setExpanded, title = "", href = "" }) => {
+const ListItem = ({ setExpanded = () => {}, title = "", href = "" }) => {
   const handleClick = () => {
     setExpanded(false);
 

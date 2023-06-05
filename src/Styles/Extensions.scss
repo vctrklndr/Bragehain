@@ -1,18 +1,15 @@
 @import "Variables.scss";
 
 %title {
-  width: 100%;
   padding-top: 4rem;
+  width: 100%;
   font-size: 4rem;
   font-family: $narnia;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   line-height: 1.4;
   color: $off-black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 
   @include media(m) {
     font-size: 6rem;

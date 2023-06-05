@@ -3,11 +3,7 @@
 .Info {
   &__Inner {
     padding: 0rem 2rem 4rem 2rem;
-    display: flex;
     background-color: $pink;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     border-radius: 4rem;
     background-image: url("../../Assets/Images/blob.webp");
     background-repeat: no-repeat;
@@ -21,6 +17,7 @@
   }
 
   &__Grid {
+    margin: 0 auto;
     max-width: 800px;
     text-align: center;
 
