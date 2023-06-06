@@ -29,14 +29,12 @@
       {
         "id": "om-bragehain",
         "title": "Om Bragehain",
-        "text": "<p>Bragehain är engångsklubben som för första och sista gången går av stapeln den 26 augusti 2023.<br /></p><ul><li>Tid och plats: 15:00 på parkeringen vid Slottet i Vadstena.</li><li>Gemensam transportering till Shakesperefabriken runt 15:30.</li></ul>",
-        "links": []
+        "text": "<p>Bragehain är engångsklubben som för första och sista gången går av stapeln den 26 augusti 2023.<br /></p><ul><li>Tid och plats: 15:00 på parkeringen vid Slottet i Vadstena.</li><li>Gemensam transportering till Shakesperefabriken runt 15:30.</li></ul>"
       },
       {
         "id": "mat-och-dryck",
         "title": "Mat & Dryck",
-        "text": "<p> Fri bar. Foodtruck.<br />Meddela allergier / specialkost tillsammans med OSA.</p>",
-        "links": []
+        "text": "<p> Fri bar. Foodtruck.<br />Meddela allergier / specialkost tillsammans med OSA.</p>"
       },
       {
         "id": "boende",

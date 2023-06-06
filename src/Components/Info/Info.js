@@ -7,11 +7,11 @@ const Info = ({ items = [], rvsp = "" }) => {
   return (
     <div className={styles["Info"]}>
       <div className={styles["Info__Inner"]}>
-        {items.map((item, index) => {
+        {items.map(({ id = "", title = "", text = "", links = [] }, index) => {
           return (
             <React.Fragment key={index}>
-              <h2 id={item.id} className={styles["Info__Title"]}>
-                {item.title}
+              <h2 id={id} className={styles["Info__Title"]}>
+                {title}
               </h2>
               <div
                 className={classNames(styles["Info__Grid"], {
@@ -20,11 +20,11 @@ const Info = ({ items = [], rvsp = "" }) => {
               >
                 <div
                   className={styles["Info__Text"]}
-                  dangerouslySetInnerHTML={{ __html: item.text }}
+                  dangerouslySetInnerHTML={{ __html: text }}
                 />
-                {item.links.length > 0 && (
+                {links.length > 0 && (
                   <ul className={styles["Info__LinkList"]}>
-                    {item.links.map((link, index) => (
+                    {links.map((link, index) => (
                       <LinkItem key={index} {...link} />
                     ))}
                   </ul>
