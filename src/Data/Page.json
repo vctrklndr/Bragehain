@@ -58,7 +58,7 @@
         ]
       }
     ],
-    "rvsp": "<p>OSA*: 20/7 till <a href='tel:0733968622'>073–396 86 22</a></p><p>*plus eventuella allergier / specialkost</p>"
+    "rvsp": "<h2>OSA*: 20/7 till <a href='tel:0733968622'><span>073–396 86 22</span></a></h2><p>*plus eventuella allergier / specialkost</p>"
   },
   "faq": {
     "title": "FAQ",

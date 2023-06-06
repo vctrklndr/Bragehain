@@ -1,5 +1,44 @@
 @import "Variables.scss";
 
+%span-link {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  text-decoration: none;
+  color: $off-black;
+
+  @include media(m) {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  span {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+
+    &:before {
+      content: "";
+      background-color: $purple;
+
+      width: 0;
+      height: 100%;
+      display: block;
+      position: absolute;
+      z-index: -1;
+      border-radius: 0.4rem;
+      transition: width 300ms ease-in-out;
+    }
+  }
+
+  &:hover {
+    span {
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+}
+
 %title {
   padding-top: 4rem;
   width: 100%;
@@ -8,7 +47,7 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  line-height: 1.4;
+  line-height: 1;
   color: $off-black;
 
   @include media(m) {

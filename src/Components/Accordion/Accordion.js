@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import classNames from "classnames";
 import { debounce } from "debounce";
+import { ReactComponent as LinkIcon } from "../../Assets/Images/icon-link.svg";
 
 import styles from "./Accordion.module.scss";
 
@@ -99,6 +100,7 @@ const LinkItem = ({ title = "", href = "" }) => {
     <li className={styles["Accordion__Item"]}>
       <a className={styles["Accordion__Link"]} href={href}>
         {title}
+        <LinkIcon className={styles["Accordion__Icon"]} />
       </a>
     </li>
   );

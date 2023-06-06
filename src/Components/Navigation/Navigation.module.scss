@@ -13,7 +13,9 @@
     transition: 400ms ease-in-out background-color;
 
     &:hover {
-      background-color: $dark-pink;
+      @include media(m) {
+        background-color: $dark-pink;
+      }
     }
   }
 
@@ -78,6 +80,7 @@
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    line-height: 1;
     color: $purple;
     display: inline-block;
     border: 0;

@@ -1,5 +1,6 @@
 import React from "react";
 import classNames from "classnames";
+import { ReactComponent as LinkIcon } from "../../Assets/Images/icon-link.svg";
 import styles from "./Info.module.scss";
 
 const Info = ({ items = [], rvsp = "" }) => {
@@ -32,7 +33,7 @@ const Info = ({ items = [], rvsp = "" }) => {
             </React.Fragment>
           );
         })}
-        <h2
+        <div
           className={styles["Info__RVSP"]}
           dangerouslySetInnerHTML={{ __html: rvsp }}
         />
@@ -45,7 +46,9 @@ const LinkItem = ({ href = "", title = "" }) => {
   return (
     <li className={styles["Info__Item"]}>
       <a className={styles["Info__Link"]} href={href}>
-        <span>{title}</span>
+        <span>
+          {title} <LinkIcon className={styles["Info__Icon"]} />
+        </span>
       </a>
     </li>
   );
