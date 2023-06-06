@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Bragehain/static/css/main.af9a2554.css",
-    "main.js": "/Bragehain/static/js/main.5d59d840.js",
+    "main.css": "/Bragehain/static/css/main.6c4f375b.css",
+    "main.js": "/Bragehain/static/js/main.839a58d9.js",
     "static/js/787.c7966af5.chunk.js": "/Bragehain/static/js/787.c7966af5.chunk.js",
     "static/media/purple-pattern.webp": "/Bragehain/static/media/purple-pattern.05c786d780ae0e868f25.webp",
     "static/media/MoonDream.otf": "/Bragehain/static/media/MoonDream.9df2eb86c57960b82275.otf",
@@ -9,14 +9,14 @@
     "static/media/AftenScreenBold.ttf": "/Bragehain/static/media/AftenScreenBold.48ab02d5adf251d81712.ttf",
     "static/media/Narnia.otf": "/Bragehain/static/media/Narnia.8484ea9bca34d58f4534.otf",
     "static/media/blob.webp": "/Bragehain/static/media/blob.041c54d9b6d2a61cf44b.webp",
-    "static/media/icon-link.svg": "/Bragehain/static/media/icon-link.85a35d02e8b4c6dbd8c5.svg",
+    "static/media/icon-link.svg": "/Bragehain/static/media/icon-link.904eb2fcd4de58bfdbb4893872209359.svg",
     "index.html": "/Bragehain/index.html",
-    "main.af9a2554.css.map": "/Bragehain/static/css/main.af9a2554.css.map",
-    "main.5d59d840.js.map": "/Bragehain/static/js/main.5d59d840.js.map",
+    "main.6c4f375b.css.map": "/Bragehain/static/css/main.6c4f375b.css.map",
+    "main.839a58d9.js.map": "/Bragehain/static/js/main.839a58d9.js.map",
     "787.c7966af5.chunk.js.map": "/Bragehain/static/js/787.c7966af5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.af9a2554.css",
-    "static/js/main.5d59d840.js"
+    "static/css/main.6c4f375b.css",
+    "static/js/main.839a58d9.js"
   ]
 }
