@@ -22,13 +22,17 @@
   }
 
   &__PreTitle {
-    margin-bottom: 1.4rem;
+    margin-bottom: 1rem;
     font-family: $moon-dream;
     font-size: calc(12.54545px + 0.45455vw);
     text-transform: uppercase;
     letter-spacing: 0.25rem;
     line-height: 1;
     color: $off-black;
+
+    @include media(m) {
+      margin-bottom: 1.6rem;
+    }
   }
 
   &__Title {
@@ -53,7 +57,7 @@
     margin-top: -1rem;
     font-family: $moon-dream;
     font-size: calc(15.09091px + 0.90909vw);
-    line-height: 1.4;
+    line-height: 1.2;
     text-transform: uppercase;
     color: $off-black;
 
