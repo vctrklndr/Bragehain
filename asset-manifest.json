@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Bragehain/static/css/main.7f299217.css",
+    "main.css": "/Bragehain/static/css/main.63fc6bbd.css",
     "main.js": "/Bragehain/static/js/main.8caae8d3.js",
     "static/js/787.c7966af5.chunk.js": "/Bragehain/static/js/787.c7966af5.chunk.js",
     "static/media/purple-pattern.webp": "/Bragehain/static/media/purple-pattern.05c786d780ae0e868f25.webp",
@@ -11,12 +11,12 @@
     "static/media/blob.webp": "/Bragehain/static/media/blob.041c54d9b6d2a61cf44b.webp",
     "static/media/icon-link.svg": "/Bragehain/static/media/icon-link.904eb2fcd4de58bfdbb4893872209359.svg",
     "index.html": "/Bragehain/index.html",
-    "main.7f299217.css.map": "/Bragehain/static/css/main.7f299217.css.map",
+    "main.63fc6bbd.css.map": "/Bragehain/static/css/main.63fc6bbd.css.map",
     "main.8caae8d3.js.map": "/Bragehain/static/js/main.8caae8d3.js.map",
     "787.c7966af5.chunk.js.map": "/Bragehain/static/js/787.c7966af5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f299217.css",
+    "static/css/main.63fc6bbd.css",
     "static/js/main.8caae8d3.js"
   ]
 }
