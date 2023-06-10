@@ -56,7 +56,7 @@
         ]
       }
     ],
-    "rvsp": "<h2>OSA*: 20/7 till <a href='tel:0733968622'><span>073–396 86 22</span></a></h2><p>*plus eventuella allergier / specialkost</p>"
+    "rvsp": "<h2>OSA: 20/7 till <a href='tel:0733968622'><span>073–396 86 22</span></a></h2><p>*plus eventuella allergier / specialkost</p>"
   },
   "faq": {
     "title": "FAQ",
@@ -64,7 +64,7 @@
       {
         "id": "1",
         "question": "Hur tar jag mig till Bragehain?",
-        "answer": "<p>En gemensam transport kommer att gå från Vadstena Slotts parkering ungefär vid 15.30.</p><p>Till Vadstena tar du dig enklast med bil. Annars tåg eller buss till Linköping och sen med Östgötatrafiken.</p>",
+        "answer": "<p>En gemensam transport kommer att gå från Vadstena Slotts parkering ungefär vid 15.30.</p><p>Till Vadstena tar du dig enklast med bil. Annars tåg eller buss till Linköping och sedan med Östgötatrafiken.</p>",
         "links": [
           {
             "title": "Hitta hit med bil",
@@ -87,7 +87,7 @@
       {
         "id": "2",
         "question": "Hur tar jag mig hem?",
-        "answer": "<p>Från festen får en ta sig för egen maskin. Med en 3,4 kilometers cykeltur eller promenad tar man sig enkelt in till Vadstena. Har man tur kan man lyckas boka en taxi eller så kanske man känner någon vänlig själ som kan agera skjuts.</p>",
+        "answer": "<p>Från festen får en ta sig för egen maskin. Med en 3,4 kilometers cykeltur eller promenad tar en sig enkelt in till Vadstena. Har en tur kan en lyckas boka en taxi eller så kanske en känner någon vänlig själ som kan agera skjuts.</p>",
         "links": [
           {
             "title": "Boka taxi",
@@ -102,7 +102,7 @@
       {
         "id": "3",
         "question": "Hur anmäler jag mig?",
-        "answer": "<p>För att anmäla din närvaro OSA till <a href='tel:0733968622'>073–396 86 22</a> senast 20/7.</p>"
+        "answer": "<p>För att anmäla din närvaro hör av dig till <a href='tel:0733968622'>073–396 86 22</a> senast 20/7.</p>"
       },
       {
         "id": "4",
@@ -112,12 +112,12 @@
       {
         "id": "5",
         "question": "Vad gör jag om jag blir hungrig?",
-        "answer": "<p>Det kommer finnas en foodtruck på området som serverar mat under kvällen. Vid eventuella allergier / specialkost ska detta meddelas i och med OSA.</p>"
+        "answer": "<p>Det kommer finnas en foodtruck på området som serverar mat under kvällen. Vid eventuella allergier / specialkost ska detta meddelas i och med anmälan.</p>"
       },
       {
         "id": "6",
         "question": "När slutar festligheterna?",
-        "answer": "<p>Vi måste ha utrymt lokalen 27/8 20.00.</p>"
+        "answer": "<p>Vi måste ha utrymt lokalen 27/8 10.00.</p>"
       }
     ]
   },
