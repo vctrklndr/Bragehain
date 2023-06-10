@@ -7,6 +7,7 @@ import Page from "./Data/Page.json";
 
 function App() {
   const { navigation, main, info, faq, footer } = Page;
+
   return (
     <div className="App">
       <Navigation {...navigation} />
