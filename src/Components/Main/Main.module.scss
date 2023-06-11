@@ -1,8 +1,9 @@
 @import "../../Styles/Includes.scss";
 
 .Main {
-  height: 100vh;
   width: 100%;
+  height: 100vh;
+  height: 100svh;
   position: relative;
 
   &__Inner {
@@ -19,7 +20,6 @@
     background-repeat: no-repeat;
     position: absolute;
     inset: 0;
-    bottom: -webkit-fill-available;
   }
 
   &__PreTitle {
