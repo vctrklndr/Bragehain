@@ -22,14 +22,14 @@
   "main": {
     "preTitle": "Stina Brage presenterar",
     "title": "Bragehain",
-    "text": "<h2>Shakesperefabriken<br />26 augusti</h2>"
+    "text": "<h2>Shakespearefabriken<br />26 augusti</h2>"
   },
   "info": {
     "items": [
       {
         "id": "om-bragehain",
         "title": "Om Bragehain",
-        "text": "<p>Bragehain är engångsklubben som för första och sista gången går av stapeln den 26 augusti 2023.<br /></p><ul><li>Tid och plats: 15:00 på parkeringen vid Slottet i Vadstena.</li><li>Gemensam transportering till Shakesperefabriken runt 15:30.</li></ul>"
+        "text": "<p>Bragehain är engångsklubben som för första och sista gången går av stapeln den 26 augusti 2023.<br /></p><ul><li>Tid och plats: 15:00 på parkeringen vid Slottet i Vadstena.</li><li>Gemensam transportering till Shakespearefabriken runt 15:30.</li></ul>"
       },
       {
         "id": "mat-och-dryck",
@@ -39,7 +39,7 @@
       {
         "id": "boende",
         "title": "Boende",
-        "text": "<p>Egen övernattning med bil / camper / husvagn vid Shakesperefabriken</p>",
+        "text": "<p>Egen övernattning med bil / camper / husvagn vid Shakespearefabriken</p>",
         "links": [
           {
             "title": "Hotell",
