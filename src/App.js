@@ -9,7 +9,7 @@ function App() {
   const { navigation, main, info, faq, footer } = Page;
 
   return (
-    <div className="App">
+    <div className="🪩">
       <Navigation {...navigation} />
       <Main {...main} />
       <Info {...info} />
