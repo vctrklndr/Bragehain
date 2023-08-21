@@ -29,7 +29,7 @@
       {
         "id": "om-bragehain",
         "title": "Om Bragehain",
-        "text": "<p>Bragehain är engångsklubben som för första och sista gången går av stapeln den 26 augusti 2023.<br /></p><ul><li>Tid och plats: 15:00 på parkeringen vid Slottet i Vadstena.</li><li>Gemensam transportering till Shakespearefabriken runt 15:30.</li></ul>"
+        "text": "<p>Bragehain är engångsklubben som för första och sista gången går av stapeln den 26 augusti 2023.<br /></p><ul><li>Tid och plats: 15:30 på parkeringen vid Slottet i Vadstena.</li><li>Gemensam transport till Shakespearefabriken runt 16:00.</li></ul>"
       },
       {
         "id": "mat-och-dryck",
@@ -64,7 +64,7 @@
       {
         "id": "1",
         "question": "Hur tar jag mig till Bragehain?",
-        "answer": "<p>En gemensam transport kommer att gå från Vadstena Slotts parkering ungefär vid 15.30.</p><p>Till Vadstena tar du dig enklast med bil. Annars tåg eller buss till Linköping och sedan med Östgötatrafiken.</p>",
+        "answer": "<p>En gemensam transport kommer att gå från Vadstena Slotts parkering ungefär vid 16.00.</p><p>Till Vadstena tar du dig enklast med bil. Annars tåg eller buss till Linköping och sedan med Östgötatrafiken.</p>",
         "links": [
           {
             "title": "Hitta hit med bil",
