@@ -1,9 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import "./Assets/Fonts/AftenScreen.ttf";
-// import "./Assets/Fonts/AftenScreenBold.ttf";
-// import "./Assets/Fonts/MoonDream.otf";
-// import "./Assets/Fonts/Narnia.otf";
 import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
